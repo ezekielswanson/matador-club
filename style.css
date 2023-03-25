@@ -1,0 +1,54 @@
+/**** Global Styles *****/
+
+
+
+:root {
+    --header-font: "trumpgothicpro", sans-serif;
+    --primary-font: 'DM Serif Display', serif;
+
+    /*Colors*/
+    --primary-color: #FC001F;
+    --secondary-color: #fff;
+    --tertiary-color: #000;
+
+    
+}
+  
+
+
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+
+}
+
+
+/*** Header Section Container ***/
+.header--section__container {  
+    position: relative;
+ }
+
+/*** Navigation ***/
+
+.nav--container  { 
+    padding: 1.5rem 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+}
+
+.nav--container a img { 
+    width: 274px;
+    height: 50px;
+}
+
+  .header-section__video {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: -1;
+
+}
