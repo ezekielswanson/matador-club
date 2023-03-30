@@ -1,6 +1,11 @@
 /**** Global Styles *****/
 
 
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=DM+Serif+Display&display=swap');
+
+
 
 :root {
     --header-font: 'Nanum Gothic', sans-serif;
@@ -30,7 +35,7 @@
     font-family: var(--header-font);
     line-height: 149px;
     text-transform: uppercase;
-    letter-spacing: 30px;
+    letter-spacing: 10px;
     color: var(--secondary-color);
     font-weight: 400;
     font-style: normal;
@@ -40,6 +45,10 @@
 
 
 /**** End Global Styles *****/
+
+
+
+
 
 
 
@@ -89,3 +98,61 @@
 }
 
 
+
+
+
+.reveal-text-animation {
+    position: relative;
+    width: fit-content;
+}
+
+.reveal-text-animation::after {
+    display: block;
+    display: block;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 100%;
+    width: 0%;
+    height: 100%;
+    background-color: #FC001F;
+    animation: reveal-text-animation 1.2s ease-out 1s forwards;
+}
+
+
+
+.header--section__main-text .title span {
+    display: block;
+    opacity: 0;
+    animation: fade 0.01s ease-out 1.75s forwards;
+}
+
+
+/*** Key Frames *****/
+
+
+@keyframes fade {
+    from { opacity: 0; }
+    to { opacity: 1; }
+   }
+
+
+
+@keyframes reveal-text-animation {
+    0% {
+     right: 100%;
+     left: 0;
+     width: 0%;
+    }
+    50% {
+     right: 0;
+     left: 0;
+     width: 100%;
+    }
+    100% {
+     right: 0;
+     left: 100%;
+     width: 0%;
+    }
+   }
