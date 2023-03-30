@@ -3,7 +3,7 @@
 
 
 :root {
-    --header-font: "trumpgothicpro", sans-serif;
+    --header-font: 'Nanum Gothic', sans-serif;
     --primary-font: 'DM Serif Display', serif;
 
     /*Colors*/
@@ -25,10 +25,38 @@
 }
 
 
+.title {
+    font-size: 7.438rem;
+    font-family: var(--header-font);
+    line-height: 149px;
+    text-transform: uppercase;
+    letter-spacing: 30px;
+    color: var(--secondary-color);
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+
+
+/**** End Global Styles *****/
+
+
+
 /*** Header Section Container ***/
 .header--section__container {  
     position: relative;
  }
+
+
+.header-section__video {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  z-index: -1;
+
+}
 
 /*** Navigation ***/
 
@@ -44,11 +72,20 @@
     height: 50px;
 }
 
-  .header-section__video {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    z-index: -1;
 
+
+/*** Main Header Section *****/
+
+.header--section__main__container {
+    padding: 1rem 2rem;
 }
+
+
+.header--section__main-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
