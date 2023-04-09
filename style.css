@@ -2,14 +2,13 @@
 
 
 /* Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;700&family=DM+Serif+Display&display=swap');
-
+@import url("https://use.typekit.net/hhk8bpu.css");
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
 
 
 :root {
-    --header-font: 'Nanum Gothic', sans-serif;
-    --primary-font: 'DM Serif Display', serif;
+    --header-font: "trumpgothicpro", sans-serif;
+    --primary-font: 'DM Sans', sans-serif;
 
     /*Colors*/
     --primary-color: #FC001F;
@@ -30,17 +29,41 @@
 }
 
 
+p {
+    font-size: 1rem;
+    font-family: var(--primary-font);
+    font-weight: 300;
+    line-height: 1.5rem;
+}
+
+
+/*** Utility Classes *****/
+
 .title {
-    font-size: 7.438rem;
+    font-size: 3.375rem;
     font-family: var(--header-font);
-    line-height: 149px;
+    line-height: 67.5px;
     text-transform: uppercase;
-    letter-spacing: 10px;
+    letter-spacing: 0.25rem;
     color: var(--secondary-color);
     font-weight: 400;
+    font-style: bold;
+
+}
+
+.subtitle {
+    font-size: 1rem;
+    font-family: var(--primary-font);
+    line-height: 20px;
+    text-transform: uppercase;
+    letter-spacing: 0.25rem;
+    color: var(--primary-color);
+    font-weight: 300;
     font-style: normal;
 
 }
+
+
 
 
 
@@ -102,6 +125,17 @@
 }
 
 
+.header--section__main-text h1 {
+    font-size: 7.438rem;
+    font-family: var(--header-font);
+    line-height: 149px;
+    text-transform: uppercase;
+    letter-spacing: 11.25px;
+    color: var(--secondary-color);
+    font-weight: 400;
+    font-style: bold;
+}
+
 
 
 .reveal-text-animation {
@@ -131,7 +165,7 @@
 }
 
 
-.header--section__main-text .title span {
+.header--section__main-text .main-title span {
     display: block;
     opacity: 0;
     animation: fade 0.01s ease-out 2s forwards;
@@ -151,17 +185,8 @@
     text-transform: uppercase;
     letter-spacing: 0.375rem;
     font-weight: 300;
+    margin-bottom: .5rem;
 }
-
-
-.header--section__main-text .header-section__sub-text p {
-    font-size: 1rem;
-    font-family: var(--primary-font);
-    text-transform: uppercase;
-    font-weight: 300;
-    line-height: 1.5rem;
-}
-
 
 
 .header--section__main-cta {
@@ -174,9 +199,10 @@
     letter-spacing: 0.313rem;
     position: absolute;
     right: 0;
-    transform: translateY(-50%);
+    transform: translateY(-35%);
     padding: 2.5rem 4rem;
     gap: 1rem;
+    text-decoration: none;
 
 }
 
@@ -192,6 +218,18 @@
 }
 
 
+.header--section__main-triangle {
+    width: 0; 
+    height: 0; 
+    border-bottom: 200px solid transparent;
+    border-left: 200px solid #fff;
+    transform: rotate(135deg) translateY(50%);
+    position: absolute;
+    left: 0;
+    margin-left: -36px;
+}
+
+
 
 /*** End Main Container ***/
 
@@ -199,8 +237,17 @@
 
 
 .community-section__main-container {
-    margin-top: 120px;
+    padding: 8rem 2rem 5rem;  
 }
+
+.community-section__main-container .community-section__title .subtitle {
+    color: var(--tertiary-color);
+}
+
+.community-section__main-container .community-section__title .title {
+    color: var(--tertiary-color);
+}
+
 
 
 
