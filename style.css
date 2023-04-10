@@ -64,9 +64,6 @@ p {
 }
 
 
-
-
-
 /**** End Global Styles *****/
 
 
@@ -240,6 +237,10 @@ p {
     padding: 8rem 2rem 5rem;  
 }
 
+.community-section__main-container .community-section__title {
+    animation:  slideUpIn 1.25s linear;
+}
+
 .community-section__main-container .community-section__title .subtitle {
     color: var(--tertiary-color);
 }
@@ -247,6 +248,7 @@ p {
 .community-section__main-container .community-section__title .title {
     color: var(--tertiary-color);
 }
+
 
 
 
@@ -286,4 +288,19 @@ p {
    @keyframes sub-text-fadeIn {
     from { opacity: 0; }
     to { opacity: 1; }
+   }
+
+
+
+
+
+   @keyframes slideUpIn {
+    0% {
+        transform: translateY(80px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
    }
