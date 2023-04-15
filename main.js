@@ -97,7 +97,7 @@ boxes.forEach(box => {
 let boxes = document.querySelectorAll(".fade-right");
 
 const boxSectionOptions = {
-  threshold: 0,
+  threshold: .35,
 };
 
 
