@@ -59,26 +59,58 @@ sectionOneObserver.observe(sectionOne);
 
 
 
-/* A COMMUNITY-SERVING NIL COLLECTIVE Boxes fade Right animation observer */
+/* A COMMUNITY-SERVING NIL COLLECTIVE Boxes fade Right animation observer 
 
 
-let boxesSection = document.querySelector(".community-section__steps-box-container");
-let fadeRightAnimation = document.querySelector(".community-section__steps-box-container");
+let boxes = document.querySelectorAll(".fade-right");
 
-const boxSectionObserverOptions = {
-  rootMargin: "-250px 0px 0px 0px"
+const boxSectionOptions = {
+  threshold: 0,
+  rootMargin: "0px 0px -250px 0px"
 };
+
 
 const boxesSectionObserver = new IntersectionObserver(function(
   entries,
   boxesSectionObserver
 ) {
   entries.forEach(entry => {
+   
     if (entry.isIntersecting) { // Check if the element is intersecting
-      fadeRightAnimation.classList.add("scroll-right-animation");
+      entry.target.classList.add("scroll-right-animation");
       boxesSectionObserver.unobserve(entry.target); // Unobserve the target element to prevent animation from repeating
     }
+    
   });
-}, boxSectionObserverOptions);
+}, boxSectionOptions );
 
-boxesSectionObserver.observe(boxesSection);
+
+
+
+boxes.forEach(box => {
+  boxesSectionObserver.observe(box);
+});
+
+*/
+
+
+let boxes = document.querySelectorAll(".fade-right");
+
+const boxSectionOptions = {
+  threshold: 0,
+};
+
+
+const boxesSectionObserver = new IntersectionObserver(function(entries, boxesSectionObserver) {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("scroll-right-animation");
+      boxesSectionObserver.unobserve(entry.target);
+    }
+
+  });
+}, boxSectionOptions);
+
+boxes.forEach(box => {
+  boxesSectionObserver.observe(box);
+});
