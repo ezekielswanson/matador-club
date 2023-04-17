@@ -338,6 +338,70 @@ p {
 }
 
 
+/****** Our Mission/Join The Club Section *******/
+
+
+.two-col-section_grid {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    background-color: var(--tertiary-color);
+
+}
+
+
+.two-col-section_grid .two-col-section_grid-img {
+    padding-left: 50px;
+}
+
+.two-col-section_grid .two-col-section_grid-desc {
+    padding: 80px 50px 0px;
+}
+
+.two-col-section_grid .two-col-section_grid-desc p {
+    color: var(--secondary-color);
+    margin-top: 1rem;
+    margin-bottom: 57px;
+}
+
+.two-col-section_grid .two-col-section_grid-desc .two-col-section_grid-desc-cta {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border: 1px solid #fff;
+    color: var(--secondary-color);
+    font-size: 1rem;
+    letter-spacing: 0.313rem;
+    padding: 2.5rem 4rem;
+    gap: 1rem;
+    text-decoration: none;
+}
+
+.two-col-section_grid .two-col-section_grid-desc .two-col-section_grid-desc-cta:hover {
+    background-color: var(--primary-color);
+}
+
+.two-col-section_grid .two-col-section_grid-desc .two-col-section_grid-desc-cta .cta-line {
+    border-left: 2px solid var(--secondary-color);
+    height: 27px;
+
+}
+
+
+
+.two-col-section_grid .two-col-section_grid-desc .two-col-section_grid-desc-cta svg {
+    height: 25px;
+    width: 25px;
+}
+
+
+
+
+
+
+
+
 
 
 
