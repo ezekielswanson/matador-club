@@ -32,9 +32,6 @@ sectionOneObserver.observe(sectionOne);
 
 /* A COMMUNITY-SERVING NIL COLLECTIVE Boxes fade Right animation observer */
 
-
-
-
 let boxes = document.querySelectorAll(".fade-right");
 
 const boxSectionOptions = {
@@ -54,4 +51,31 @@ const boxesSectionObserver = new IntersectionObserver(function(entries, boxesSec
 
 boxes.forEach(box => {
   boxesSectionObserver.observe(box);
+});
+
+
+
+
+/*** A COMMUNITY-SERVING NIL COLLECTIVE Boxes fade Right animation observe ***/
+
+
+let fadeInElements = document.querySelectorAll(".fade-in");
+
+const fadeInSectionOptions = {
+  threshold: .50,
+};
+
+
+const fadeInSectionObserver = new IntersectionObserver(function(entries, fadeInSectionObserver) {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("fade-in-animation");
+      fadeInSectionObserver.unobserve(entry.target);
+    }
+
+  });
+}, fadeInSectionOptions);
+
+fadeInElements.forEach(fadeInElement => {
+  boxesSectionObserver.observe(fadeInElement);
 });
