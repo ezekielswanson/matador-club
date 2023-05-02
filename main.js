@@ -62,7 +62,7 @@ boxes.forEach(box => {
 let fadeInElements = document.querySelectorAll(".fade-in");
 
 const fadeInSectionOptions = {
-  threshold: .50,
+  threshold: .35,
 };
 
 
@@ -77,5 +77,5 @@ const fadeInSectionObserver = new IntersectionObserver(function(entries, fadeInS
 }, fadeInSectionOptions);
 
 fadeInElements.forEach(fadeInElement => {
-  boxesSectionObserver.observe(fadeInElement);
+  fadeInSectionObserver.observe(fadeInElement);
 });
