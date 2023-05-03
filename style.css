@@ -406,6 +406,7 @@ p {
 
 .two-col-section_grid .two-col-section_grid-desc .two-col-section_grid-desc-cta:hover {
     background-color: var(--primary-color);
+    border-color: var(--primary-color);
 }
 
 .two-col-section_grid .two-col-section_grid-desc .two-col-section_grid-desc-cta .cta-line {
