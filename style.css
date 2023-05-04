@@ -441,6 +441,28 @@ p {
 
 
 
+
+/**** Get Involved Section ***/
+
+.two-col-section_grid-desc .two-col-section_grid__two-col-p {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    color: var(--secondary-color);
+    margin-top: 25px;
+    padding: 32px;
+}
+
+
+.two-col-section_grid-desc .two-col-section_grid__two-col-p .two-col-section_grid__two-col-p-col-1 {
+    border: solid #fff 1px;
+    padding: 32px;
+}
+
+
+
+
+
+
 /*** Key Frames *****/
 
 /** MAIN HEADER TEXT REVEAL ANIMATION */
