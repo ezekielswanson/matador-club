@@ -449,16 +449,41 @@ p {
     grid-template-columns: repeat(2,1fr);
     color: var(--secondary-color);
     margin-top: 25px;
-    padding: 32px;
+    border: solid #fff 1px;
+    text-align: center;
+
 }
+
+
 
 
 .two-col-section_grid-desc .two-col-section_grid__two-col-p .two-col-section_grid__two-col-p-col-1 {
-    border: solid #fff 1px;
+    border-right: solid #fff 1px;
+    padding: 32px;
+
+}
+
+.two-col-section_grid-desc .two-col-section_grid__two-col-p .two-col-section_grid__two-col-p-col-2 {
     padding: 32px;
 }
 
 
+.two-col-section_grid-desc .two-col-section_grid__two-col-p h5 {
+    letter-spacing: 0.25rem;
+    line-height: 24px;
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+    
+}
+
+
+.two-col-section_grid-desc .two-col-section_grid__two-col-p p {
+    line-height: 18px;
+    font-size: 0.75rem;
+    margin-bottom: 1.3rem;;
+
+
+}
 
 
 
