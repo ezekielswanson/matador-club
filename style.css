@@ -487,15 +487,54 @@ p {
 
 
 .become-a-member__main-container {
-    padding: 3rem 0rem;
+    padding: 3rem 3.125rem;
     margin: 0 auto;
 }
 
 
+.become-a-member__section .become-a-member__title-section {
+    text-align: center;
+}
+
+
+.become-a-member__section .become-a-member__title-section h3 {
+    color: var(--tertiary-color);
+}
+
+
+.become-a-member__section .become-a-member__title-section p {
+    font-size: 0.875rem;
+    margin-top: 1.5rem;
+}
 
 
 
+.become-a-member__section .become-a-member__section-benefits {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+    font-size: 0.75rem;
+    color: #575757;
+    border: solid #e5e7eb 1px;
+    margin-top: 2rem;
+}
 
+
+.become-a-member__section .become-a-member__section-benefits p:is(:nth-child(1), :nth-child(2), :nth-child(3))::after {
+    content: "";
+    height: 5px;
+    background-color: #e5e7eb;
+    width: 1px;
+}
+
+
+
+.become-a-member__section-benefits-cta {
+    display: none;
+}
 
 /*** Key Frames *****/
 
