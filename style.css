@@ -523,18 +523,28 @@ p {
 }
 
 
-.become-a-member__section .become-a-member__section-benefits p:is(:nth-child(1), :nth-child(2), :nth-child(3))::after {
-    content: "";
-    height: 5px;
-    background-color: #e5e7eb;
-    width: 1px;
+.become-a-member__section-benefits p:not(:last-child) {
+    border-right: solid 1px #e5e7eb;
 }
 
 
 
-.become-a-member__section-benefits-cta {
-    display: none;
+.become-a-member__section .become-a-member__section-benefits-cta {
+    display: flex;
+    flex-direction: row;
+    background-color: #D3D3D3;
+    padding: 2rem;
+    justify-content: center;
+    align-items: center;
 }
+
+
+
+.become-a-member__section .become-a-member__section-benefits-cta svg {
+    width: 25px;
+    height: 25px;
+}
+
 
 /*** Key Frames *****/
 
