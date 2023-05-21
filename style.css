@@ -37,6 +37,10 @@ p {
 }
 
 
+a {
+    text-decoration: none;
+}
+
 /*** Utility Classes *****/
 
 .title {
@@ -536,6 +540,18 @@ p {
     padding: 2rem;
     justify-content: center;
     align-items: center;
+    color: var(--tertiary-color);
+    gap: 16px;
+    font-family: var(--primary-font);
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-weight: 300;
+
+}
+
+
+.become-a-member__section .become-a-member__section-benefits-cta:hover {
+    background-color: var(--primary-color);
 }
 
 
