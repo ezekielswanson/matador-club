@@ -619,6 +619,64 @@ a {
 
 
 
+
+
+
+/**** Community Support Section ***/
+
+
+
+.community-support__main-container .two-col-section_grid {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    background-color: var(--secondary-color);
+    padding-top: 4rem;
+
+}
+
+
+
+.community-support__main-container .two-col-section_grid .two-col-section_grid-desc,
+.community-support__main-container .two-col-section_grid .two-col-section_grid-desc .two-col-section_grid-title h3 {
+
+    color: var(--tertiary-color);
+}
+
+
+.community-support__main-container .two-col-section_grid .two-col-section_grid-desc .community-support__form p {
+    margin-bottom: 20px;
+}
+
+
+
+.community-support__main-container .two-col-section_grid .two-col-section_grid-desc .community-support__form input {
+    border: 1px solid #e5e7eb;
+    padding: 0.5rem;
+}
+
+
+.community-support__main-container .two-col-section_grid .two-col-section_grid-desc .community-support__form .community-support__form-name-inputs {
+    display: flex;
+    flex-direction: row;
+}
+
+
+.community-support__main-container .two-col-section_grid .two-col-section_grid-desc .community-support__form .community-support__form-name-inputs label {
+    display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*** Key Frames *****/
 
 /** MAIN HEADER TEXT REVEAL ANIMATION */
