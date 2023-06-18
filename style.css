@@ -652,18 +652,17 @@ a {
 .community-support__main-container .two-col-section_grid .two-col-section_grid-desc .community-support__form input {
     border: 1px solid #e5e7eb;
     padding: 0.5rem;
+    width: 100%;
 }
 
 
 .community-support__main-container .two-col-section_grid .two-col-section_grid-desc .community-support__form .community-support__form-name-inputs {
     display: flex;
     flex-direction: row;
+    gap: 0.5rem;
 }
 
 
-.community-support__main-container .two-col-section_grid .two-col-section_grid-desc .community-support__form .community-support__form-name-inputs label {
-    display: block;
-}
 
 
 

@@ -281,15 +281,19 @@
                     <div class="community-support__form-title"><p>The Matador Club is an NIL collective that directly impacts student quality of life, local businesses, nonprofits, and Texas Tech.</p></div>
                     <form action="/submit" method="post">
                         <div class="community-support__form-name-inputs">
-                            <label for="fname">First Name:</label>
-                            <input type="text" id="fname" name="fname" required><br>
-                            <label for="lname">Last Name:</label>
-                            <input type="text" id="lname" name="lname" required><br>
+                            <div class="community-support__form-name-first-name__container">
+                                <label for="fname">First Name:</label>
+                                <input type="text" id="fname" name="fname" required>
+                            </div>
+                            <div class="community-support__form-name-last-name__container">
+                                <label for="lname">Last Name:</label>
+                                <input type="text" id="lname" name="lname" required>
+                            </div>
                         </div>                   
-                        <label for="email">Email:</label><br>
+                        <label for="email">Email:</label>
                         <input type="email" id="email" name="email" required><br>
                         
-                        <label for="comments">Comments:</label><br>
+                        <label for="comments">Comments:</label>
                         <textarea id="comments" name="comments" rows="4" cols="50" required></textarea><br>
                         
                         <input type="submit" value="Submit">
