@@ -630,7 +630,7 @@ a {
     display: grid;
     grid-template-columns: repeat(2,1fr);
     background-color: var(--secondary-color);
-    padding-top: 4rem;
+    padding: 4rem 4rem;
 
 }
 
@@ -653,6 +653,7 @@ a {
     border: 1px solid #e5e7eb;
     padding: 0.5rem;
     width: 100%;
+    margin-bottom: 16px;
 }
 
 
@@ -665,8 +666,35 @@ a {
 
 
 
+.community-support__form-name-inputs-email {
+    width: 93%;
+}
 
 
+
+.community-support__main-container .two-col-section_grid .two-col-section_grid-desc .community-support__form  .community-support__form-name-inputs-comments {
+    display: flex;
+    flex-direction: column;
+    width: 93%;
+
+}
+
+textarea {
+    border: 1px solid #e5e7eb; 
+}
+
+
+.community-support__main-container .two-col-section_grid .two-col-section_grid-desc .community-support__form button {
+    background-color: var(--primary-color);
+    padding: 40px 60px;
+    border: solid 1px var(--primary-color);
+    width: 93%;
+    color: var(--secondary-color);
+    font-family: var(--primary-font);
+    font-size: 16px;
+    cursor: pointer;
+
+}
 
 
 
