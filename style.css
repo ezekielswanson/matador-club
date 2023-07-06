@@ -704,6 +704,64 @@ textarea {
 
 
 
+
+
+/*** Responsive Styles *****/
+
+
+@media (max-width: 769px) {
+    
+
+.header--section__main__container {
+    padding: 1rem 0rem;
+}
+
+
+
+.header--section__main-triangle {
+    display: none;
+}
+
+
+
+.header--section__main-cta {
+    position: static;
+    right: auto;
+    transform: translateY(16px);
+}
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+/*** End Responsive Styles *****/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*** Key Frames *****/
 
 /** MAIN HEADER TEXT REVEAL ANIMATION */
