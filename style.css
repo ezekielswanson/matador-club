@@ -25,7 +25,13 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    max-width: 100%;
 
+}
+
+
+body {
+    overflow-x: hidden;
 }
 
 
@@ -39,6 +45,11 @@ p {
 
 a {
     text-decoration: none;
+}
+
+
+img {
+    max-width: 100%;
 }
 
 /*** Utility Classes *****/
@@ -648,6 +659,7 @@ a {
 .community-support__main-container .two-col-section_grid .two-col-section_grid-desc .two-col-section_grid-title h3 {
 
     color: var(--tertiary-color);
+    overflow-x: hidden;
 }
 
 
@@ -723,6 +735,11 @@ textarea {
 
 
 @media (max-width: 769px) {
+
+
+.two-col-section_grid {
+    grid-template-columns: 1fr;
+}
     
 
 /*** Header Section Container ***/
@@ -745,7 +762,51 @@ textarea {
     transform: translateY(16px);
 }
 
+
 /*** End Header Section Container ***/
+
+
+
+/*** Community Section Container ***/
+
+
+
+
+
+.community-section__main-container .community-section__steps-container .community-section__steps-line {
+    display: none;
+}
+
+.community-section__main-container .community-section__steps-container .community-section__steps-grid {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+/*** END Community Section Container ***/
+
+
+
+
+/*** Our Mission Join Club ***/
+
+
+
+
+
+
+
+
+/*** END Our Mission Join Club ***/
+
+
+
+
+
+
+/*** End Responsive Styles *****/
 
 
 
@@ -753,7 +814,21 @@ textarea {
 
 
 
-/*** End Responsive Styles *****/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
