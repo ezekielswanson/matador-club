@@ -393,6 +393,7 @@ img {
 
 .two-col-section_grid .two-col-section_grid-desc {
     padding: 80px 50px;
+   
 }
 
 .two-col-section_grid .two-col-section_grid-desc .two-col-section_grid-p {
@@ -737,6 +738,8 @@ textarea {
 @media (max-width: 769px) {
 
 
+
+
 /*** Global Mobile/Tablet Styles ****/
 
 .two-col-section_grid {
@@ -745,6 +748,8 @@ textarea {
     
 
 /*** Header Section Container ***/
+
+
 
 .header--section__main__container {
     padding: 1rem 0rem;
@@ -785,18 +790,20 @@ textarea {
 }
 
 
-/*** END Community Section Container ***/s
+/*** END Community Section Container ***/
 
+
+
+.two-col-section_grid .two-col-section_grid-desc  {
+    order: 2;
+
+}
 
 
 
 /*** Our Mission Join Club ***/
 
 
-
-.two-col-section_grid .two-col-section_grid-desc {
-    order: 2 !important;
-}
 
 
 
@@ -838,13 +845,31 @@ textarea {
     border-right: none;
 }
 
-
+.become-a-member__section .become-a-member__section-benefits .become-a-member__section-benefits-cta {
+    margin-bottom: 30px;
+}
 
 
 
 /**** End Become a Partner Section ****/
 
 
+
+.community-support__main-container .two-col-section_grid {
+    grid-template-columns: 1fr;
+}
+
+
+.community-support__main-container .two-col-section_grid .two-col-section_grid-desc {
+    padding-top: 0px;
+}
+
+
+
+
+.community-support__main-container .two-col-section_grid .community-support__img {
+    order: 2;
+}
 
 /*** End Responsive Styles *****/
 
