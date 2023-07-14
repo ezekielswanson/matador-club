@@ -727,6 +727,39 @@ textarea {
 
 
 
+/*** Footer *****/
+
+
+footer {
+    background-color: var(--tertiary-color);
+    padding: 64px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    color: var(--secondary-color);
+}
+
+
+
+footer .footer__col-1 img {
+    height: 64px;
+    max-width: 100%;
+}
+
+footer svg {
+    width: 20px;
+    height: 20px;
+}
+
+
+footer h5 {
+    color: #6B7280;
+}
+
+
+
+/*** End Footer *****/
+
 
 
 
