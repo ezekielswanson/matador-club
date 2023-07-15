@@ -687,16 +687,9 @@ img {
 
 
 
-.community-support__form-name-inputs-email {
-    width: 93%;
-}
-
-
-
 .community-support__main-container .two-col-section_grid .two-col-section_grid-desc .community-support__form  .community-support__form-name-inputs-comments {
     display: flex;
     flex-direction: column;
-    width: 93%;
 
 }
 
@@ -709,7 +702,7 @@ textarea {
     background-color: var(--primary-color);
     padding: 40px 60px;
     border: solid 1px var(--primary-color);
-    width: 93%;
+    width: 100%;
     color: var(--secondary-color);
     font-family: var(--primary-font);
     font-size: 16px;
@@ -882,6 +875,24 @@ footer .footer__col-3 .footer__col-3--social-links {
 
 /*** END Our Mission Join Club ***/
 
+
+
+
+
+
+.two-col-section_main-container.name-image__container .two-col-section_grid.name-image__grid .two-col-section_grid-img.name-image__img {
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
 .two-col-section_grid-desc .two-col-section_grid__two-col-p .two-col-section_grid__two-col-p-col-1 {
     border-right: none;
     border-bottom: solid #fff 1px;
@@ -924,6 +935,19 @@ footer .footer__col-3 .footer__col-3--social-links {
 
 
 
+
+/**** Community Support Section ****/
+
+
+.community-support__main-container .two-col-section_grid.community-support .two-col-section_grid-desc {
+    padding: 0px 0px 40px 0px;
+}
+
+
+
+
+
+
 .community-support__main-container .two-col-section_grid {
     grid-template-columns: 1fr;
 }
@@ -940,6 +964,17 @@ footer .footer__col-3 .footer__col-3--social-links {
     order: 2;
 }
 
+
+
+.community-support__main-container .two-col-section_grid .two-col-section_grid-desc .community-support__form .community-support__form-name-inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+
+
+/**** END Community Support Section ****/
 
 
 
