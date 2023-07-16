@@ -595,10 +595,6 @@ img {
 
 
 
-.two-col-section_grid-img.name-image__img {
-    padding-top: 6rem;
-}
-
 .two-col-section_grid .two-col-section_grid-desc .fade-in.delay-1 {
     transition-delay: .1s;
 }
