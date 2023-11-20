@@ -762,8 +762,8 @@ footer h5 {
     margin-bottom: 8px;
 }
 
-footer a {
-   color: white;
+footer .footer__col-3--social-links a {
+   color: #fff;
    text-decoration: none;
 }
 
